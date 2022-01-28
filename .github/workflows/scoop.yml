@@ -1,4 +1,4 @@
-name: scoop Workflows  
+name: Octo Workflows  
  
 on: 
     push: 
@@ -30,7 +30,7 @@ jobs:
          continue-on-error: true 
          run: | 
            git clone -b main https://${{ secrets.GH_TOKEN }}@github.com/DontJinx/scoop
-       - name: Running Scoop Bot  
+       - name: Running Octo Bot  
          timeout-minutes: 350 
          continue-on-error: true 
          run: | 
